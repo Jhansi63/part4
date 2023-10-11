@@ -1,0 +1,66 @@
+<html>
+<head><title>CALC</title>
+<Body bgcolor="lavender">
+<script>
+function Add()
+{
+var num1, num2,Add;
+num1=parseInt(document.getElementById("fnum").value);
+num2=parseInt(document.getElementById("snum").value);
+Add=num1+num2;
+document.getElementById("result").value=Add;
+}
+
+function subtract()
+{
+var num1, num2,subtract;
+num1=parseInt(document.getElementById("fnum").value);
+num2=parseInt(document.getElementById("snum").value);
+subtract=num1-num2;
+document.getElementById("result").value=subtract;
+}
+ 
+function multiply()
+{
+var num1, num2,multiply;
+num1=parseInt(document.getElementById("fnum").value);
+num2=parseInt(document.getElementById("snum").value);
+multiply=num1*num2;
+document.getElementById("result").value=multiply;
+}
+
+function division()
+{
+var num1, num2,division;
+num1=parseInt(document.getElementById("fnum").value);
+num2=parseInt(document.getElementById("snum").value);
+division=num1/num2;
+document.getElementById("result").value=division;
+}
+
+</script>
+</head>
+<body>
+<center><h1>Calculator</h1></center>
+<table align="center">
+<tr>
+<td><label> Enter First Num :</label></td><td><input id = "fnum"></td>
+</tr>
+<tr>
+<td> <label> Enter Second Num :</label></td><td><input id = "snum"></td>
+</tr>
+<tr>
+<td><label> Result :</label></td>
+<td><input id="result"> </td>
+</tr>
+<tr>
+<td><button style="width:100px" onClick="Add()">Add</button></td>
+<td><button style="width:100px" onClick="subtract()">subtract</button></td>
+</tr>
+<tr>
+<td><button style="width:100px"  onClick="multiply()">multiply</button></td>
+<td><button style="width:100px" onClick="division()">division</button></td>
+</tr>
+</table>
+</body>
+</html>
